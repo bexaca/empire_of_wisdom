@@ -222,14 +222,6 @@ nav a:focus {
 /* Content elements */
 
 .hero__header_slider .bg-img-0 {
-    background-image: url(../img/slide.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.hero__header_slider .bg-img-1 {
     background-image: url(../img/slide1.jpg);
     background-attachment: fixed;
     background-position: center;
@@ -237,7 +229,7 @@ nav a:focus {
     background-size: cover;
 }
 
-.hero__header_slider .bg-img-2 {
+.hero__header_slider .bg-img-1 {
     background-image: url(../img/slide2.jpg);
     background-attachment: fixed;
     background-position: center;
@@ -245,8 +237,16 @@ nav a:focus {
     background-size: cover;
 }
 
+.hero__header_slider .bg-img-2 {
+    background-image: url(../img/slide1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .hero__header_slider .bg-img-3 {
-    background-image: url(../img/slide3.jpg);
+    background-image: url(../img/slide2.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -254,7 +254,7 @@ nav a:focus {
 }
 
 .hero__header_slider .bg-img-4 {
-    background-image: url(../img/slide4.jpg);
+    background-image: url(../img/slide3.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
