@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../../scss/pages/thank_you.css",
+	"sources": [
+		"../../scss/pages/thank_you.scss"
+	],
+	"sourcesContent": [
+		"\r\n.thank_you:first-child {\r\n  margin: 50px 50px 0 50px;\r\n}\r\n\r\n.thank_you {\r\n  font-family: open_sansbold;\r\n  font-size: 100%;\r\n  color: #233337;\r\n  display: block;\r\n  text-shadow: 0 13.36px 8.896px #c4b59d, 0 -2px 1px #fff;\r\n}\r\n\r\n.thank_you_a {\r\n  vertical-align: middle;\r\n  font-family: open_sansbold;\r\n  font-size: 100%;\r\n  color: #233337;\r\n  text-shadow: 0 13.36px 8.896px #c4b59d, 0 -2px 1px #fff;\r\n  transition: 0.5s;\r\n  opacity: 1;\r\n  margin: 50px 50px 0 50px;\r\n}\r\n\r\n.thank_you_link a:hover {\r\n  transition: 0.5s;\r\n  opacity: 0.6;\r\n}\r\n\r\n.thank_you_link {\r\n  display: block;\r\n  text-shadow: 0 13.36px 8.896px #c4b59d, 0 -2px 1px #fff;\r\n}\r\n\r\n.thank_you_link:first-of-type {\r\n  margin-top: 50px;\r\n}\r\n"
+	],
+	"mappings": ";AACA,AAAU,UAAA,AAAA,YAAY,CAAC;EACrB,MAAM,EAAE,gBAAiB;CAC1B;;;AAED,AAAA,UAAU,CAAC;EACT,WAAW,EAAE,aAAc;EAC3B,SAAS,EAAE,IAAK;EAChB,KAAK,EAAE,OAAQ;EACf,OAAO,EAAE,KAAM;EACf,WAAW,EAAE,0CAA2C;CACzD;;;AAED,AAAA,YAAY,CAAC;EACX,cAAc,EAAE,MAAO;EACvB,WAAW,EAAE,aAAc;EAC3B,SAAS,EAAE,IAAK;EAChB,KAAK,EAAE,OAAQ;EACf,WAAW,EAAE,0CAA2C;EACxD,UAAU,EAAE,IAAK;EACjB,OAAO,EAAE,CAAE;EACX,MAAM,EAAE,gBAAiB;CAC1B;;;AAED,AAAiB,eAAF,CAAC,CAAC,AAAA,MAAM,CAAC;EACtB,UAAU,EAAE,IAAK;EACjB,OAAO,EAAE,GAAI;CACd;;;AAED,AAAA,eAAe,CAAC;EACd,OAAO,EAAE,KAAM;EACf,WAAW,EAAE,0CAA2C;CACzD;;;AAED,AAAe,eAAA,AAAA,cAAc,CAAC;EAC5B,UAAU,EAAE,IAAK;CAClB",
+	"names": []
+}

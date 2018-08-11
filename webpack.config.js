@@ -25,8 +25,22 @@ module.exports = {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 loader: "babel-loader"
-            }
+            },
+
+            {
+                test: /\.modernizrrc.js$/,
+                use: [ 'modernizr-loader' ]
+            },
+            {
+                test: /\.modernizrrc(\.json)?$/,
+                use: [ 'modernizr-loader', 'json-loader' ]
+            },
         ]
+    },
+    resolve: {
+        alias: {
+            modernizr$: path.resolve(__dirname, "path/to/.modernizrrc")
+        }
     },
     plugins: [
       new webpack.ProvidePlugin({

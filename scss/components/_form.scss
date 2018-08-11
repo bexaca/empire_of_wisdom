@@ -1,0 +1,98 @@
+.ccform{
+  margin-bottom: 50px;
+  .ccfield-prepend:last-of-type{
+    text-align: center;
+    input.ccbtn{
+      float: none;
+      display: inline-block;
+      @include transition_mix;
+    }
+  }
+}
+.fa {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: pointer;
+  -webkit-transition: 0.6s ease-in-out;
+  -moz-transition: 0.6s ease-in-out;
+  -ms-transition: 0.6s ease-in-out;
+  -o-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
+  color: #D0BB57;
+}
+
+.fa:hover {
+  color: #d8850e;
+
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.ccfield-prepend {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.ccform-addon {
+  color: #f8ae45;
+  float: left;
+  padding: 8px;
+  width: 8%;
+  background: #FFFFFF;
+  text-align: center;
+  @include respond-to(md){
+    display: none;
+  }
+}
+
+.ccformfield {
+  color: #000000;
+  background: #FFFFFF;
+  border: none;
+  padding: 15.5px;
+  border-bottom: 1px solid gray;
+  width: 91.9%;
+  display: block;
+  //	font-family: 'Lato',Arial,sans-serif;
+  font-size: 14px;
+  @include respond-to(md){
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.ccformfield:focus {
+  outline: none;
+}
+
+.ccbtn {
+  display: block;
+  border: none;
+  background: none;
+  border: 1px solid;
+  float: right;
+  color: $yellow;
+  padding: 10px 50px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.ccbtn:hover {
+  background: $yellow;
+  color: white;
+
+}
+#submit__button:focus, #submit__button:active{
+  outline: none;
+}

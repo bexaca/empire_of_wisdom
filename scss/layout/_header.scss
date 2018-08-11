@@ -1,5 +1,20 @@
-
 /* ----- HEADER ------------------------------------------------------------- */
 
-
-
+.logo__image {
+  position: absolute;
+  top: 30px;
+  z-index: 100;
+  left: 5%;
+  width: 5%;
+  -webkit-transition: 0.6s ease-in-out;
+  -moz-transition: 0.6s ease-in-out;
+  -ms-transition: 0.6s ease-in-out;
+  -o-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
+  @include respond-to(md){
+    display: none;
+  }
+  &:hover {
+    width: 5.2%;
+  }
+}

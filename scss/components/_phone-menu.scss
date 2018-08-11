@@ -1,0 +1,163 @@
+#wrapper svg {
+    -webkit-filter: drop-shadow( 2px 2px 10px rgba(0,0,0,.2) );
+}
+
+#wrapper .icon-wrap {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    z-index: 28;
+    @include respond-to(md){
+        display: block;
+    }
+}
+
+#wrapper path {
+    stroke:#ffe5b9;
+    stroke-linecap:round;
+    stroke-width:30;
+}
+
+#wrapper path.x {
+    stroke-dashoffset:-1490;
+    stroke-dasharray:840 2000;
+    stroke-miterlimit:10;
+}
+
+#wrapper path.o {
+    stroke-dashoffset:1700;
+    stroke-dasharray:2520 3000;
+    stroke-miterlimit:10;
+}
+
+#wrapper path.yy {
+    stroke-dashoffset:1700;
+    stroke-dasharray:2520 3000;
+    transition:.3s .2s ease-in-out;
+}
+
+#wrapper .toClose path.yy {
+    stroke-dashoffset:-1200;
+    transition:.5s 0s ease-in-out;
+}
+
+#wrapper path.x2 {
+    transform:rotate(0deg) translateX(0px);
+    transform-origin:right center;
+    transition:.5s 0s ease-in-out;
+}
+
+#wrapper .toClose path.x2:first-of-type {
+    transform:rotate(-45deg) translate(-80px, -80px);
+}
+
+#wrapper .toClose path.x2 {
+    transform:rotate(45deg) translate(-80px, 80px);
+    transition:.3s .2s ease-in-out;
+}
+
+#wrapper circle {
+    fill:transparent;
+    transition:.5s ease-in-out;
+}
+
+#wrapper .toClose circle {
+    fill:rgba(151,115,151,.3);
+    transition:1s ease-in-out;
+}
+
+#wrapper .toClose svg path.x {
+    animation: toCloseX .4s ease-in-out forwards;
+}
+
+#wrapper .toClose svg path.o {
+    animation: toCloseO .4s ease-out forwards;
+}
+
+#wrapper .toOpen svg path.x {
+    animation: toOpenX .4s ease-in-out forwards;
+}
+
+#wrapper .toOpen svg path.o {
+    animation: toOpenO .4s ease-out forwards;
+}
+
+@keyframes toCloseX {
+    0% {
+        stroke-dashoffset:-1490;
+    }
+    100% {
+        stroke-dashoffset:0;
+    }
+}
+
+@keyframes toOpenX {
+    0% {
+        stroke-dashoffset:0;
+    }
+    100% {
+        stroke-dashoffset:-1490;
+    }
+}
+
+@keyframes toCloseO {
+    0% {
+        stroke-dashoffset:1700;
+    }
+    100% {
+        stroke-dashoffset:-1260;
+    }
+}
+
+@keyframes toOpenO {
+    0% {
+        stroke-dashoffset:-1260;
+    }
+    100% {
+        stroke-dashoffset:1700;
+    }
+}
+
+.menu__block{
+    background-color: white;
+    display: none;
+    -webkit-transition: 0.6s ease-in-out;
+    -moz-transition: 0.6s ease-in-out;
+    -ms-transition: 0.6s ease-in-out;
+    -o-transition: 0.6s ease-in-out;
+    transition: 0.6s ease-in-out;
+    @include respond-to(md){
+        display: block;
+    }
+    .menu__items{
+        pointer-events: none;
+        opacity: 0;
+        border: 1px solid $yellow;
+        -webkit-transition: 0.6s ease-in-out;
+        -moz-transition: 0.6s ease-in-out;
+        -ms-transition: 0.6s ease-in-out;
+        -o-transition: 0.6s ease-in-out;
+        transition: 0.6s ease-in-out;
+        .menu__item{
+            display: block;
+            text-align: center;
+            a{
+                color: $yellow;
+                display: block;
+                padding: 20px;
+                font-size: 25px;
+                border-bottom: 1px solid;
+            }
+        }
+    }
+    .menu__items.menu__items-active{
+        opacity: 1;
+    }
+    .menu-items-pointer-events{
+        pointer-events: all;
+    }
+}
+.menu__block.menu__active{
+    top: 0;
+}

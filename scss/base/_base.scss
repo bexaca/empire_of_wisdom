@@ -1,8 +1,27 @@
 
 /* ----- BASE --------------------------------------------------------------- */
 
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro|Source+Serif+Pro:400,600,700');
+
 body {
     -webkit-font-smoothing: antialiased;
+    user-select: none;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+main{
+    background: url(../img/bg.png);
+    overflow-y: hidden;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Source Serif Pro', serif;
+}
+
+ul{
+    list-style: none;
 }
 
 a {

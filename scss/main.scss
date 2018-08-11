@@ -3,9 +3,8 @@
 @import "compass";
 
 // VENDOR
-@import "vendor/_customVariables.scss";
+@import "vendor/_customVariables.scss";   
 @import "vendor/_bootstrap.scss";
-@import "vendor/_bootstrap-compass.scss";
 
 // BASE
 @import "base/_variables.scss";
@@ -17,5 +16,24 @@
 @import "layout/_footer.scss";
 
 // COMPONENTS
+@import "components/_slider.scss";
+@import "components/_cards.scss";
+@import "components/_carousel.scss";
+@import "components/_form.scss";
+@import "components/phone-menu";
+@import "components/menu";
+@import "components/social";
+@import "components/preloader";
+@import "components/alert";
 
 // PAGES
+@import "pages/_inner.scss";
+@import "pages/thank";
+
+// EXTERNAL SCSS
+@import "external_css/custom.scss";
+@import "external_css/slick.scss";
+@import "external_css/style.scss";
+@import "external_css/animate.scss";
+
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";

@@ -1,0 +1,17 @@
+.carousel {
+    margin: 50px 0;
+    padding: 50px 0;
+    background: url(../img/carousel_patern.jpg);
+    background-attachment: fixed;
+    background-size: contain;
+//    background-color: white;
+//    background-repeat: no-repeat;
+    .slick-list.draggable {
+        text-align: center;
+        .slick-slide img {
+            width: 50px;
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}

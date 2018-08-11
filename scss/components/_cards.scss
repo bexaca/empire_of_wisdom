@@ -1,0 +1,65 @@
+// variables
+$card-width: 350px;
+$card-height: 450px;
+$h-color: #9CC9E3;
+$yellow: #D0BB57;
+$txt-color: #DCE3E7;
+.blog-card {
+    width: 100%;
+    height: $card-height;
+    //  position: absolute;
+    //  top: 50%;
+    //  left: 50%;
+    //  margin: -250px 0 0 -175px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, .5);
+    text-align: center;
+    margin-bottom: 25px;
+    background: url(../img/pattern.jpg) no-repeat;
+    background-size: cover;
+    
+    .title-content {
+        text-align: center;
+        margin: 15px 0 0 0;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        top: 0;
+        left: 0;
+        h3{
+            color: $yellow;
+        }
+    }
+    hr {
+        width: 50px;
+        height: 3px;
+        margin: 20px auto;
+        border: 0;
+        background: $yellow;
+    }
+    .intro__price{
+        font-weight: 600;
+        color: darkgray;
+    }
+    .intro {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 16px;
+//        font-style: italic;
+        .intro__country {
+            color: darkgray;
+            display: block;
+            font-size: 20px;
+        }
+    }
+    .intro-last .intro__country {
+        font-weight: 500;
+        font-size: 22px;
+        color: green;
+    }
+    .intro-last .intro__price{
+        color: green;
+        font-size: 19px;
+    }
+}
