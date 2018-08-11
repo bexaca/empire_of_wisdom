@@ -1,84 +1,56 @@
-.ccform{
-  margin-bottom: 50px;
-  .ccfield-prepend:last-of-type{
+.contact__block {
+  background: url('../img/contact.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: right;
+  .heading__block .section__heading {
+    color: white;
+  }
+  .form{
     text-align: center;
-    input.ccbtn{
+    form{
+      width: 60%;
+      display: inline-block;
+      text-align: left;
+      @media (max-width: 768px){
+        width: 95%;
+      }
+    }
+  }
+}
+
+.ccform {
+  margin-bottom: 50px;
+  .ccfield-prepend:last-of-type {
+    text-align: center;
+    input.ccbtn {
       float: none;
       display: inline-block;
       @include transition_mix;
     }
   }
-}
-.fa {
-  display: inline-block;
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  cursor: pointer;
-  -webkit-transition: 0.6s ease-in-out;
-  -moz-transition: 0.6s ease-in-out;
-  -ms-transition: 0.6s ease-in-out;
-  -o-transition: 0.6s ease-in-out;
-  transition: 0.6s ease-in-out;
-  color: #D0BB57;
+  .form__input {
+    width: 100%;
+    background: none;
+    border: none;
+    color: white;
+    margin-bottom: 10px;
+    outline: none;
+    text-align: center;
+  }
 }
 
-.fa:hover {
-  color: #d8850e;
-
-}
-
-.fa-2x {
-  font-size: 2em;
-}
-
-.ccfield-prepend {
-  margin-bottom: 10px;
-  width: 100%;
-}
-
-.ccform-addon {
-  color: #f8ae45;
-  float: left;
-  padding: 8px;
-  width: 8%;
-  background: #FFFFFF;
+.button__block {
   text-align: center;
-  @include respond-to(md){
-    display: none;
-  }
-}
-
-.ccformfield {
-  color: #000000;
-  background: #FFFFFF;
-  border: none;
-  padding: 15.5px;
-  border-bottom: 1px solid gray;
-  width: 91.9%;
-  display: block;
-  //	font-family: 'Lato',Arial,sans-serif;
-  font-size: 14px;
-  @include respond-to(md){
-    width: 90%;
-    margin: 0 auto;
-  }
-}
-
-.ccformfield:focus {
-  outline: none;
 }
 
 .ccbtn {
-  display: block;
+  @include transition_mix;
+  display: inline-block;
   border: none;
   background: none;
   border: 1px solid;
-  float: right;
-  color: $yellow;
+  color: white;
   padding: 10px 50px;
   cursor: pointer;
   text-decoration: none;
@@ -89,10 +61,82 @@
 }
 
 .ccbtn:hover {
-  background: $yellow;
+  background: rgba(255, 255, 255, 0.4);
   color: white;
-
 }
-#submit__button:focus, #submit__button:active{
+
+#submit__button:focus,
+#submit__button:active {
   outline: none;
+}
+
+:focus {
+  outline: none;
+}
+
+.input__block {
+  width: 100%;
+  float: left;
+  margin: 15px 0;
+  position: relative;
+}
+
+/* necessary to give position: relative to parent. */
+
+input[type="text"],
+textarea {
+  position: relative;
+  z-index: 1;
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+
+.effect-16 {
+  border: 0;
+  padding: 4px 0;
+  border-bottom: 1px solid #aaa;
+  background-color: transparent;
+}
+
+.effect-16~.focus-border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: 0.4s;
+  z-index: 1;
+}
+
+.effect-16:focus~.focus-border,
+.has-content.effect-16~.focus-border {
+  width: 100%;
+  transition: 0.4s;
+}
+
+.textearea~.focus-border,
+.textearea~.focus-border {
+  bottom: 5px;
+}
+
+.effect-16~label {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 5px;
+  color: #aaa;
+  transition: 0.3s;
+  z-index: 0;
+  letter-spacing: 0.5px;
+}
+
+.effect-16:focus~label,
+.has-content.effect-16~label {
+  top: -16px;
+  font-size: 12px;
+  color: white;
+  transition: 0.3s;
 }

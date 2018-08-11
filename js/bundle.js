@@ -18959,6 +18959,16 @@ $(document).ready(function () {
     $('.ccformfield').on('keydown', function () {
         $('.alert__block').removeClass('active__alert');
     });
+
+    $(".col-12 .input__field").val("");
+
+    $(".input-effect .input__field").focusout(function () {
+        if ($(this).val() != "") {
+            $(this).addClass("has-content");
+        } else {
+            $(this).removeClass("has-content");
+        }
+    });
 });
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
