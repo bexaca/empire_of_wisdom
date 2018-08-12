@@ -1,14 +1,14 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js start
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js run watch
 
 PATH: 
-  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\bexaca\bin;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Common Files\Autodesk Shared;C:\Program Files\Common Files\Autodesk Shared;C:\Program Files (x86)\QuickTime\QTSystem;C:\Program Files\nodejs;C:\Program Files (x86)\Brackets\command;C:\Program Files (x86)\Skype\Phone;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin;C:\WINDOWS\System32\OpenSSH;D:\Program Files (x86)\Microsoft VS Code\bin;C:\Ruby24-x64\bin;C:\Users\bexaca\AppData\Local\Microsoft\WindowsApps;C:\Users\bexaca\AppData\Roaming\npm;C:\Users\bexaca\AppData\Local\GitHubDesktop\bin;C:\Users\bexaca\AppData\Local\Microsoft\WindowsApps;D:\Program Files (x86)\Microsoft VS Code\bin;C:\Users\bexaca\AppData\Local\Yarn\bin
+  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\bexaca\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Microsoft VS Code\bin;C:\Users\bexaca\AppData\Local\Microsoft\WindowsApps;C:\Users\bexaca\AppData\Roaming\npm;C:\Users\bexaca\AppData\Local\GitHubDesktop\bin;C:\Users\bexaca\AppData\Local\Yarn\bin;C:\Users\bexaca\AppData\Local\Microsoft\WindowsApps
 
 Yarn version: 
   1.5.1
 
 Node version: 
-  6.11.0
+  9.0.0
 
 Platform: 
   win32 x64
@@ -51,6 +51,7 @@ npm manifest:
     },
     "dependencies": {
       "bootstrap": "^3.3.7",
+      "shufflejs": "^5.1.2",
       "wowjs": "^1.1.3"
     }
   }
@@ -247,6 +248,10 @@ Lockfile:
   array-find-index@^1.0.1:
     version "1.0.2"
     resolved "https://registry.yarnpkg.com/array-find-index/-/array-find-index-1.0.2.tgz#df010aa1287e164bbda6f9723b0a96a1ec4187a1"
+  
+  array-parallel@^0.1.3:
+    version "0.1.3"
+    resolved "https://registry.yarnpkg.com/array-parallel/-/array-parallel-0.1.3.tgz#8f785308926ed5aa478c47e64d1b334b6c0c947d"
   
   array-unique@^0.3.2:
     version "0.3.2"
@@ -3173,6 +3178,10 @@ Lockfile:
     dependencies:
       object-visit "^1.0.0"
   
+  matches-selector@^1.0.0:
+    version "1.2.0"
+    resolved "https://registry.yarnpkg.com/matches-selector/-/matches-selector-1.2.0.tgz#d1814e7e8f43e69d22ac33c9af727dc884ecf12a"
+  
   math-expression-evaluator@^1.2.14:
     version "1.2.17"
     resolved "https://registry.yarnpkg.com/math-expression-evaluator/-/math-expression-evaluator-1.2.17.tgz#de819fdbcd84dccd8fae59c6aeb79615b9d266ac"
@@ -4989,6 +4998,15 @@ Lockfile:
     version "1.0.0"
     resolved "https://registry.yarnpkg.com/shebang-regex/-/shebang-regex-1.0.0.tgz#da42f49740c0b42db2ca9728571cb190c98efea3"
   
+  shufflejs@^5.1.2:
+    version "5.1.2"
+    resolved "https://registry.yarnpkg.com/shufflejs/-/shufflejs-5.1.2.tgz#8882ce172aca382b61ee937fd70eb72767497c7c"
+    dependencies:
+      array-parallel "^0.1.3"
+      matches-selector "^1.0.0"
+      throttleit "^1.0.0"
+      tiny-emitter "^2.0.1"
+  
   signal-exit@^3.0.0, signal-exit@^3.0.2:
     version "3.0.2"
     resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
@@ -5384,6 +5402,10 @@ Lockfile:
     version "0.2.0"
     resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   
+  throttleit@^1.0.0:
+    version "1.0.0"
+    resolved "https://registry.yarnpkg.com/throttleit/-/throttleit-1.0.0.tgz#9e785836daf46743145a5984b6268d828528ac6c"
+  
   through2@^2.0.0:
     version "2.0.3"
     resolved "https://registry.yarnpkg.com/through2/-/through2-2.0.3.tgz#0004569b37c7c74ba39c43f3ced78d1ad94140be"
@@ -5404,6 +5426,10 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/timers-browserify/-/timers-browserify-2.0.10.tgz#1d28e3d2aadf1d5a5996c4e9f95601cd053480ae"
     dependencies:
       setimmediate "^1.0.4"
+  
+  tiny-emitter@^2.0.1:
+    version "2.0.2"
+    resolved "https://registry.yarnpkg.com/tiny-emitter/-/tiny-emitter-2.0.2.tgz#82d27468aca5ade8e5fd1e6d22b57dd43ebdfb7c"
   
   tiny-relative-date@^1.3.0:
     version "1.3.0"
@@ -5909,14 +5935,17 @@ Lockfile:
       window-size "0.1.0"
 
 Trace: 
-  Error: Command "start" not found.
-      at MessageError.Error (native)
-      at new MessageError (C:\Program Files (x86)\Yarn\lib\cli.js:186:110)
-      at C:\Program Files (x86)\Yarn\lib\cli.js:87307:17
-      at next (native)
-      at step (C:\Program Files (x86)\Yarn\lib\cli.js:98:30)
-      at C:\Program Files (x86)\Yarn\lib\cli.js:116:14
-      at Promise.F (C:\Program Files (x86)\Yarn\lib\cli.js:23451:28)
-      at C:\Program Files (x86)\Yarn\lib\cli.js:95:12
-      at runCommand (C:\Program Files (x86)\Yarn\lib\cli.js:87312:22)
-      at Object.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:87412:14)
+  Error: Command failed.
+  Exit code: 3221225786
+  Command: C:\WINDOWS\system32\cmd.exe
+  Arguments: /d /s /c npm run dev -- --watch
+  Directory: C:\xampp\htdocs\www\empire_of_wisdom
+  Output:
+  
+      at ProcessTermError.MessageError (C:\Program Files (x86)\Yarn\lib\cli.js:186:110)
+      at new ProcessTermError (C:\Program Files (x86)\Yarn\lib\cli.js:226:113)
+      at ChildProcess.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:30281:17)
+      at emitTwo (events.js:135:13)
+      at ChildProcess.emit (events.js:224:7)
+      at maybeClose (internal/child_process.js:943:16)
+      at Process.ChildProcess._handle.onexit (internal/child_process.js:220:5)
