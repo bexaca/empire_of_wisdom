@@ -7,7 +7,6 @@
     background: #EEE;
     border: none;
     border-radius: 7px;
-    background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2));
     color: #222;
     font-family: sans-serif;
     font-size: 16px;
@@ -17,6 +16,12 @@
     color: gray;
     border: 1px solid gray;
     border-radius: 0.5em;
+    @media (max-width: 500px) {
+        display: block;
+        width: 100%;
+        border-left: none;
+        border-right: none;
+    }
 }
 
 .button:hover {
@@ -59,10 +64,16 @@
 
 .button-group .button:first-child {
     border-radius: 0.5em 0 0 0.5em;
+    @media (max-width: 500px) {
+        border-radius: 0;
+    }
 }
 
 .button-group .button:last-child {
     border-radius: 0 0.5em 0.5em 0;
+    @media (max-width: 500px) {
+        border-radius: 0;
+    }
 }
 
 /* ---- isotope ---- */
