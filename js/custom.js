@@ -17,8 +17,3 @@ jQuery(document).ready(function () {
     });
 
 });
-
-//NICE SCROLL
-jQuery(function () {
-    jQuery("body").niceScroll();
-});

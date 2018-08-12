@@ -28,18 +28,6 @@ jQuery(document).ready(function () {
         });
     }
 
-
-    $("body").niceScroll({
-        cursorcolor:"#D0BB57",
-        cursorborder:'none',
-        bouncescroll: true,
-        autohidemode: false,
-        scrollspeed: 80,
-        mousescrollstep: 80,
-        horizrailenabled: false
-    });
-
-
     if (window.location.href.indexOf("thank") >= 0) {
         setTimeout(function () {
             window.location = (window.location.origin);
