@@ -13,11 +13,16 @@ main{
     background: url(../img/bg.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
 }
 
 h1, h2, h3, h4, h5, h6{
     font-family: 'Lato', sans-serif;
     text-align: center;
+}
+
+section{
+    padding: 120px 0;
 }
 
 ul{
