@@ -18,8 +18,8 @@
     @media (max-width: 500px) {
         display: block;
         width: 100%;
-        border-left: none;
-        border-right: none;
+        // border-left: none;
+        // border-right: none;
     }
 }
 
@@ -95,6 +95,7 @@
     margin: 0.6%;
     @media (max-width: 768px){
         width: 50%;
+        margin: 0;
     }
 }
 
