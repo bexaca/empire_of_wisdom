@@ -33,7 +33,13 @@
 </head>
 
 <body class="body">
-    <div class="preloader">
+    <div class="preloader__container">
+        <div class="preloader">
+            <div class="circ1"></div>
+            <div class="circ2"></div>
+            <div class="circ3"></div>
+            <div class="circ4"></div>
+        </div>
     </div>
     <header id="header">
         <nav class="navigation__block-inner">
@@ -163,25 +169,19 @@
                             se bavi obukom pasa za zaštitu i čuvanje lica i objekata iz Velike Britanije koja nam je ukazala
                             poverenje i imala uspeha sa mnogim našim psima.</p>
                         <p class="text-center">Naša odgajivačnica nije samo posao, to je ljubav koju prenosimo na svoju decu.</p>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                            Launch demo modal
-                        </button>
-                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
+                        <div class="modal__block">
+                            <button type="button" data-toggle="modal" data-target="#standard">
+                                Standard
+                            </button>
+                        </div>
+                        <div class="modal fade" id="standard" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
                                 <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
+ 
                                     <div class="modal-body">
-                                        ...
+                                        test
                                     </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -210,7 +210,7 @@
         <section class="container">
             <div class="row">
                 <div id="gallery__block">
-        
+        <div class="col-md-12">
                     <div class="heading__block" id="service__block">
                         <h2 class="section__heading">Galerija</h2>
                     </div>
@@ -226,7 +226,7 @@
                         <div class="grid-item element-item transition male" data-category="male">
                             <img src="./img/gallery/male/Donald Empire Of Wisdom/thumb/384038_285205881528211_1446679041_n.jpg" />
                         </div>
-                        <div class="grid-item element-item transition male">
+                        <div class="grid-item element-item transition male test">
                             <img src="./img/gallery/male/Hulio Empire Of Wisdom/thumb/14370377_10153860001190823_3457575012273218172_n.jpg" />
                         </div>
                         <div class="grid-item element-item transition female">
@@ -235,7 +235,7 @@
                         <div class="grid-item element-item transition female">
                             <img src="./img/gallery/male/Remus Custodi nos/thumb/DSCN0954.JPG" />
                         </div>
-                        <div class="grid-item element-item transition female">
+                        <div class="grid-item element-item transition female test">
                             <img src="./img/gallery/female/Anja Empire Of Wisdom/thumb/Image00003.jpg" />
                         </div>
                         <div class="grid-item element-item transition female">
@@ -244,7 +244,7 @@
                         <div class="grid-item element-item transition female">
                             <img src="./img/gallery/female/Eudora i Noa Hana/thumb/Eudora Empire Of Wisdom.jpg" />
                         </div>
-                        <div class="grid-item element-item transition female">
+                        <div class="grid-item element-item transition female test">
                             <img src="./img/gallery/female/Euphoria Empire Of Wisdom/thumb/Image00002.jpg" />
                         </div>
                         <div class="grid-item element-item transition female">
@@ -253,7 +253,7 @@
                         <div class="grid-item element-item transition female">
                             <img src="./img/gallery/female/GoAndWinForAfina/thumb/IMG_E4906.JPG" />
                         </div>
-                        <div class="grid-item element-item transition female">
+                        <div class="grid-item element-item transition female test">
                             <img src="./img/gallery/female/Hanna Empire Of Wisdom/thumb/Image00001.jpg" />
                         </div>
                         <div class="grid-item element-item transition female">
@@ -262,7 +262,7 @@
                         <div class="grid-item element-item transition female">
                             <img src="./img/gallery/female/Irmatas Black Mamba For Empire Of Wisdom/thumb/irmatasBlackMamba(2).JPG" />
                         </div>
-                        <div class="grid-item element-item transition female">
+                        <div class="grid-item element-item transition female test">
                             <img src="./img/gallery/female/Katta Strajano/thumb/Image00003.jpg" />
                         </div>
                         <div class="grid-item element-item transition female">
@@ -271,12 +271,11 @@
                         <div class="grid-item element-item transition kennel">
                             <img src="./img/gallery/kennel/thumb/Image00038.jpg" />
                         </div>
-                        <div class="grid-item element-item transition kennel">
+                        <div class="grid-item element-item transition kennel test">
                             <img src="./img/gallery/ostalo/thumb/Image00007.jpg" />
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12">
                 </div>
             </div>
             <div class="row">
@@ -287,7 +286,7 @@
                 </div>
             </div>
         </section>
-        <div class="carousel">
+        <!-- <div class="carousel">
             <div class="carousel__inner">
                 <div>
                     <img src="img/maps-and-flags.svg" alt="parking icon"> Parking
@@ -314,7 +313,7 @@
                     <img src="img/translation.svg" alt="translate icon"> Translation services
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!-- OVERFLOW -->
         <div class="heading__block" id="about__block">

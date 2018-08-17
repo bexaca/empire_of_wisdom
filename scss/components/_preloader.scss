@@ -1,4 +1,4 @@
-.preloader {
+.preloader__container {
   text-align: center;
   position: fixed;
   top: 0;
@@ -7,4 +7,58 @@
   bottom: 0;
   background-color: #fff;
   z-index: 99999;
+  
+}
+
+.preloader > div {
+  background-color: gray;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  
+  -webkit-animation: stretchdelay 0.7s infinite ease-in-out;
+  animation: stretchdelay 0.7s infinite ease-in-out;
+}
+
+.preloader{
+  transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+
+.preloader .circ2 {
+  -webkit-animation-delay: -0.6s;
+  animation-delay: -0.6s;
+}
+
+.preloader .circ3 {
+  -webkit-animation-delay: -0.5s;
+  animation-delay: -0.5s;
+}
+
+.preloader .circ4 {
+  -webkit-animation-delay: -0.4s;
+  animation-delay: -0.4s;
+}
+
+.preloader .circ5 {
+  -webkit-animation-delay: -0.3s;
+  animation-delay: -0.3s;
+}
+
+@-webkit-keyframes stretchdelay {
+  0%, 40%, 100% { -webkit-transform: translateY(-10px) }  
+  20% { -webkit-transform: translateY(-20px) }
+}
+
+@keyframes stretchdelay {
+  0%, 40%, 100% { 
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+  } 20% {
+    transform: translateY(-20px);
+    -webkit-transform: translateY(-20px);
+  }
 }
