@@ -29,6 +29,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" integrity="sha256-9vPVPdIkAmHxV2la3zhqXAgBQpjBn2LM9jzRYploktA=" crossorigin="anonymous" />
     <script src="js/modernizr.custom.79639.js"></script>
 </head>
 
@@ -224,10 +225,19 @@
                         <div class="grid">
                             <div class="grid-sizer"></div>
                             <div class="grid-item element-item transition male" data-category="male">
-                                <img src="./img/gallery/male/Donald Empire Of Wisdom/thumb/384038_285205881528211_1446679041_n.jpg" />
-                            </div>
+                                <a href="./img/gallery/male/Donald Empire Of Wisdom/thumb/384038_285205881528211_1446679041_n.jpg" data-fancybox="gallery" data-caption="Caption for single image">
+                                    <img src="./img/gallery/male/Donald Empire Of Wisdom/thumb/384038_285205881528211_1446679041_n.jpg" />
+                                </a>
+                                <div class="d-none">
+                                        <a href="./img/gallery/male/Hulio Empire Of Wisdom/thumb/14370377_10153860001190823_3457575012273218172_n.jpg" data-fancybox="gallery" data-caption="Caption #2">
+                                            <img src="./img/gallery/male/Hulio Empire Of Wisdom/thumb/14370377_10153860001190823_3457575012273218172_n.jpg" />
+                                        </a>
+                                </div>
+                                </div>
                             <div class="grid-item element-item transition male test">
-                                <img src="./img/gallery/male/Hulio Empire Of Wisdom/thumb/14370377_10153860001190823_3457575012273218172_n.jpg" />
+                                    <a href="./img/gallery/male/Hulio Empire Of Wisdom/thumb/14370377_10153860001190823_3457575012273218172_n.jpg" data-fancybox="gallery" data-caption="Caption #2">
+                                            <img src="./img/gallery/male/Hulio Empire Of Wisdom/thumb/14370377_10153860001190823_3457575012273218172_n.jpg" />
+                                        </a>
                             </div>
                             <div class="grid-item element-item transition female">
                                 <img src="./img/gallery/male/IrmatasBarrakuda/thumb/IMG_E4390.JPG" />
@@ -297,14 +307,43 @@
                     </a>
                 </div>
                 <div class="col-md-3 text-center">
-                        <a href="https://www.protectiondogs.co.uk/" target="_blank">
-                            <img src="./img/bj.png" alt="">
-                        </a>
+                    <div data-toggle="modal" data-target="#transport">
+                        <img src="./img/bj.png" alt="">
+                    </div>
+                    <div class="modal fade" id="transport" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <h3>Transport pasa Boban Janković</h3>
+                                    <p>Za sve naše klijente smo obezbedili transport za pse širom sveta</p>
+                                    <p>+381 63 214 145</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-3 text-center">
-                        <a href="https://www.protectiondogs.co.uk/" target="_blank">
-                            <img src="./img/bi.png" alt="">
-                        </a>
+                    <div data-toggle="modal" data-target="#dresura">
+                        <img src="./img/bi.png" alt="">
+                    </div>
+                    <div class="modal fade" id="dresura" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <h3>Dresura pasa sa Boškom Ivkov</h3>
+                                    <ul>
+                                        <li>Licencirani WUSV markirant 2003-2005</li>
+                                        <li>Državni šampion IPO 3 trag 2013</li>
+                                        <li>Trener jedinog nemačkog ovčara koji ima plasman na WUSV svetskom šampionatu iz Srbije ikada</li>
+                                        <li>Trener pasa koji su se takmičili na FCI IPO FMBB WUSV</li>
+                                        <li>Markirant na mnogobrojnim ZTP , Kerung i IPO manifestacijama</li>
+                                        <li>Trener sportskih pasa više od 20 godina</li>
+                                        <li>Odgajivač sportskih pasa više od 20 godina</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -395,6 +434,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js" integrity="sha256-Tb4gdeCN/ACKmhKQ3BSfbuNgIVYQzBlEvbYlwK7juDw=" crossorigin="anonymous"></script>
     <script src="./webpack/jsFiles/test.js"></script>
     <script src="js/bundle.js"></script>
     <script src="js/jquery.ba-cond.min.js"></script>
