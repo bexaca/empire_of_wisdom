@@ -43,10 +43,11 @@
     </div>
     <header id="header">
         <nav class="navigation__block-inner">
-            <a href="#step__block" class="scroll">o nama</a>
-            <a href="#service__block" class="scroll">galerija</a>
-            <a href="#about__block" class="scroll">pansion za pse</a>
-            <a href="#guide__block" class="scroll">kontakt</a>
+            <a href="#about__block" class="scroll">o nama</a>
+            <a href="#pet_sitting__block" class="scroll">pansion za pse</a>
+            <a href="#gallery__block" class="scroll">galerija</a>
+            <a href="#friends__block" class="scroll">naši prijatelji</a>
+            <a href="#contact__block" class="scroll">kontakt</a>
         </nav>
 
         <div id="demo" class="collapse">
@@ -155,10 +156,10 @@
         </div>
     </div>
     <main>
-        <section class="container">
+        <section class="container" id="about__block">
             <div class="row">
                 <div class="col-md-12 about__block">
-                    <div class="heading__block" id="about__block">
+                    <div class="heading__block">
                         <h2 class="text-center section__heading">O nama</h2>
                         <p class="text-center">Odgajivačnica EMPIRE OF WISDOM osnovana je 2010. godine pod rednim FCI brojem 5042. Nalazimo se u
                             Srbiji, Novoj Pazovi, na samo 30 km od Beograda i 40 km od Novog Sada.</p>
@@ -177,7 +178,7 @@
                         <div class="modal fade" id="standard" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-lg" role="document">
                                 <div class="modal-content">
- 
+
                                     <div class="modal-body">
                                         test
                                     </div>
@@ -189,11 +190,11 @@
                 </div>
             </div>
         </section>
-        <section class="pet__sitting">
+        <section class="pet__sitting" id="pet_sitting__block">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="heading__block" id="pet__sitting">
+                        <div class="heading__block">
                             <h2 class="section__heading text-right">Pansion za pse</h2>
                         </div>
 
@@ -207,77 +208,78 @@
                 </div>
             </div>
         </section>
-        <section class="container">
+        <section class="container" id="gallery__block">
             <div class="row">
                 <div id="gallery__block">
-        <div class="col-md-12">
-                    <div class="heading__block" id="service__block">
-                        <h2 class="section__heading">Galerija</h2>
+                    <div class="col-md-12">
+                        <div class="heading__block">
+                            <h2 class="section__heading">Galerija</h2>
+                        </div>
+                        <div class="button-group filters-button-group">
+                            <button class="button is-checked" data-filter="*">Prikaži sve</button>
+                            <button class="button" data-filter=".male">Mužjaci</button>
+                            <button class="button" data-filter=".female">Ženke</button>
+                            <button class="button" data-filter=".kennel">Štenci</button>
+                        </div>
+                        <div class="grid">
+                            <div class="grid-sizer"></div>
+                            <div class="grid-item element-item transition male" data-category="male">
+                                <img src="./img/gallery/male/Donald Empire Of Wisdom/thumb/384038_285205881528211_1446679041_n.jpg" />
+                            </div>
+                            <div class="grid-item element-item transition male test">
+                                <img src="./img/gallery/male/Hulio Empire Of Wisdom/thumb/14370377_10153860001190823_3457575012273218172_n.jpg" />
+                            </div>
+                            <div class="grid-item element-item transition female">
+                                <img src="./img/gallery/male/IrmatasBarrakuda/thumb/IMG_E4390.JPG" />
+                            </div>
+                            <div class="grid-item element-item transition female">
+                                <img src="./img/gallery/male/Remus Custodi nos/thumb/DSCN0954.JPG" />
+                            </div>
+                            <div class="grid-item element-item transition female test">
+                                <img src="./img/gallery/female/Anja Empire Of Wisdom/thumb/Image00003.jpg" />
+                            </div>
+                            <div class="grid-item element-item transition female">
+                                <img src="./img/gallery/female/Bela Empire Of Wisdom/thumb/Bela Empire Of Wisdom.jpg" />
+                            </div>
+                            <div class="grid-item element-item transition female">
+                                <img src="./img/gallery/female/Eudora i Noa Hana/thumb/Eudora Empire Of Wisdom.jpg" />
+                            </div>
+                            <div class="grid-item element-item transition female test">
+                                <img src="./img/gallery/female/Euphoria Empire Of Wisdom/thumb/Image00002.jpg" />
+                            </div>
+                            <div class="grid-item element-item transition female">
+                                <img src="./img/gallery/female/euphoria/thumb/DSC_0040.JPG" />
+                            </div>
+                            <div class="grid-item element-item transition female">
+                                <img src="./img/gallery/female/GoAndWinForAfina/thumb/IMG_E4906.JPG" />
+                            </div>
+                            <div class="grid-item element-item transition female test">
+                                <img src="./img/gallery/female/Hanna Empire Of Wisdom/thumb/Image00001.jpg" />
+                            </div>
+                            <div class="grid-item element-item transition female">
+                                <img src="./img/gallery/female/Iramatas Barracuda/thumb/Image00004.jpg" />
+                            </div>
+                            <div class="grid-item element-item transition female">
+                                <img src="./img/gallery/female/Irmatas Black Mamba For Empire Of Wisdom/thumb/irmatasBlackMamba(2).JPG" />
+                            </div>
+                            <div class="grid-item element-item transition female test">
+                                <img src="./img/gallery/female/Katta Strajano/thumb/Image00003.jpg" />
+                            </div>
+                            <div class="grid-item element-item transition female">
+                                <img src="./img/gallery/female/Zvezda Adriatiki Winter/thumb/IMG_3730.JPG" />
+                            </div>
+                            <div class="grid-item element-item transition kennel">
+                                <img src="./img/gallery/kennel/thumb/Image00038.jpg" />
+                            </div>
+                            <div class="grid-item element-item transition kennel test">
+                                <img src="./img/gallery/ostalo/thumb/Image00007.jpg" />
+                            </div>
+                        </div>
                     </div>
-        
-                    <div class="button-group filters-button-group">
-                        <button class="button is-checked" data-filter="*">Prikaži sve</button>
-                        <button class="button" data-filter=".male">Mužjaci</button>
-                        <button class="button" data-filter=".female">Ženke</button>
-                        <button class="button" data-filter=".kennel">Štenci</button>
-                    </div>
-                    <div class="grid">
-                        <div class="grid-sizer"></div>
-                        <div class="grid-item element-item transition male" data-category="male">
-                            <img src="./img/gallery/male/Donald Empire Of Wisdom/thumb/384038_285205881528211_1446679041_n.jpg" />
-                        </div>
-                        <div class="grid-item element-item transition male test">
-                            <img src="./img/gallery/male/Hulio Empire Of Wisdom/thumb/14370377_10153860001190823_3457575012273218172_n.jpg" />
-                        </div>
-                        <div class="grid-item element-item transition female">
-                            <img src="./img/gallery/male/IrmatasBarrakuda/thumb/IMG_E4390.JPG" />
-                        </div>
-                        <div class="grid-item element-item transition female">
-                            <img src="./img/gallery/male/Remus Custodi nos/thumb/DSCN0954.JPG" />
-                        </div>
-                        <div class="grid-item element-item transition female test">
-                            <img src="./img/gallery/female/Anja Empire Of Wisdom/thumb/Image00003.jpg" />
-                        </div>
-                        <div class="grid-item element-item transition female">
-                            <img src="./img/gallery/female/Bela Empire Of Wisdom/thumb/Bela Empire Of Wisdom.jpg" />
-                        </div>
-                        <div class="grid-item element-item transition female">
-                            <img src="./img/gallery/female/Eudora i Noa Hana/thumb/Eudora Empire Of Wisdom.jpg" />
-                        </div>
-                        <div class="grid-item element-item transition female test">
-                            <img src="./img/gallery/female/Euphoria Empire Of Wisdom/thumb/Image00002.jpg" />
-                        </div>
-                        <div class="grid-item element-item transition female">
-                            <img src="./img/gallery/female/euphoria/thumb/DSC_0040.JPG" />
-                        </div>
-                        <div class="grid-item element-item transition female">
-                            <img src="./img/gallery/female/GoAndWinForAfina/thumb/IMG_E4906.JPG" />
-                        </div>
-                        <div class="grid-item element-item transition female test">
-                            <img src="./img/gallery/female/Hanna Empire Of Wisdom/thumb/Image00001.jpg" />
-                        </div>
-                        <div class="grid-item element-item transition female">
-                            <img src="./img/gallery/female/Iramatas Barracuda/thumb/Image00004.jpg" />
-                        </div>
-                        <div class="grid-item element-item transition female">
-                            <img src="./img/gallery/female/Irmatas Black Mamba For Empire Of Wisdom/thumb/irmatasBlackMamba(2).JPG" />
-                        </div>
-                        <div class="grid-item element-item transition female test">
-                            <img src="./img/gallery/female/Katta Strajano/thumb/Image00003.jpg" />
-                        </div>
-                        <div class="grid-item element-item transition female">
-                            <img src="./img/gallery/female/Zvezda Adriatiki Winter/thumb/IMG_3730.JPG" />
-                        </div>
-                        <div class="grid-item element-item transition kennel">
-                            <img src="./img/gallery/kennel/thumb/Image00038.jpg" />
-                        </div>
-                        <div class="grid-item element-item transition kennel test">
-                            <img src="./img/gallery/ostalo/thumb/Image00007.jpg" />
-                        </div>
-                    </div>
-                </div>
                 </div>
             </div>
+        </section>
+        <section class="container" id="friends__block">
             <div class="row">
                 <div class="col-md-12">
                     <div class="heading__block" id="about__block">
@@ -316,11 +318,13 @@
         </div> -->
 
         <!-- OVERFLOW -->
-        <div class="heading__block" id="about__block">
-            <h2 class="section__heading">Gde se nalazimo</h2>
-        </div>
-        <iframe class="google_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2824.3553829170273!2d20.211297915215393!3d44.93644297909819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a5eae155df4eb%3A0x64cbb8143fccd6d2!2z0JbQtdC70LXQt9C90LjRh9C60LAgMTA5LCDQndC-0LLQsCDQn9Cw0LfQvtCy0LAgMjIzMzA!5e0!3m2!1ssr!2srs!4v1533991009030"
+        <section class="bottom__padding">
+            <div class="heading__block" id="about__block">
+                <h2 class="section__heading">Gde se nalazimo</h2>
+            </div>
+            <iframe class="google_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2824.3553829170273!2d20.211297915215393!3d44.93644297909819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a5eae155df4eb%3A0x64cbb8143fccd6d2!2z0JbQtdC70LXQt9C90LjRh9C60LAgMTA5LCDQndC-0LLQsCDQn9Cw0LfQvtCy0LAgMjIzMzA!5e0!3m2!1ssr!2srs!4v1533991009030"
             height="450" scrolling="no" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </section>
         <section class="contact__block">
             <div class="container">
                 <!--      FORM      -->
