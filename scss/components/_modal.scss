@@ -15,5 +15,11 @@
         margin-top: 25px;
         max-width: 200px;
         border-radius: 50%;
+        border: 2px solid #353b48;
+    }
+    &.standard{
+        p{
+            margin: 0 25px;
+        }
     }
 }
