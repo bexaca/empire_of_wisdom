@@ -1,0 +1,19 @@
+.modal {
+    h3 {
+        font-weight: 700;
+        font-size: 30px;
+        color: #353b48;
+    }
+    ul,
+    .content {
+        padding: 40px 0;
+    }
+    li {
+        margin-bottom: 5px;
+    }
+    img {
+        margin-top: 25px;
+        max-width: 200px;
+        border-radius: 50%;
+    }
+}

@@ -1,6 +1,9 @@
 .friend__block {
     position: relative;
     cursor: pointer;
+    @media (max-width: 768px) {
+        margin-bottom: 25px;
+    }
     &:hover {
         .overlay {
             opacity: 1;
