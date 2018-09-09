@@ -1,8 +1,5 @@
 jQuery(document).ready(function () {
 
-    //    $('.carousel__inner').slick({
-    //        setting - name: setting - value
-    //    });
     $('.carousel__inner').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -35,7 +32,6 @@ jQuery(document).ready(function () {
     }
 
     new WOW().init();
-
 
 });
 

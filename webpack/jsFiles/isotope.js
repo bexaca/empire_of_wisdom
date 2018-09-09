@@ -1,10 +1,8 @@
 var $grid = $('.grid').imagesLoaded(function () {
   $grid.isotope({
     itemSelector: '.grid-item',
+    layoutMode: 'fitRows',
     percentPosition: true,
-    masonry: {
-      columnWidth: '.grid-sizer'
-    }
   });
 });
 
@@ -34,4 +32,10 @@ $('.button-group').each(function (i, buttonGroup) {
     $buttonGroup.find('.is-checked').removeClass('is-checked');
     $(this).addClass('is-checked');
   });
+});
+
+// Gallery
+
+$("[data-fancybox]").fancybox({
+  animationEffect: "zoom-in-out"
 });

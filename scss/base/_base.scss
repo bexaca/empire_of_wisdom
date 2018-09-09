@@ -1,48 +1,52 @@
-
 /* ----- BASE --------------------------------------------------------------- */
 
 @import url('https://fonts.googleapis.com/css?family=Lato|Source+Sans+Pro');
-
 body {
     -webkit-font-smoothing: antialiased;
     user-select: none;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-.overflow{
+.overflow {
     overflow: hidden;
 }
 
-.d-block{
+.d-block {
     display: block;
 }
 
-main{
+main {
     background: url(../img/bg.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Lato', sans-serif;
     text-align: center;
 }
 
-section{
+section {
     padding: 120px 0;
-    &.bottom__padding{
+    &.bottom__padding {
         padding-bottom: 0;
     }
 }
 
-ul{
+ul {
     list-style: none;
 }
 
 a {
-
-    &:hover, &:focus, &:active {
+    &:hover,
+    &:focus,
+    &:active {
         text-decoration: none;
         outline: none;
         @include transition(all 0.2s ease-in-out);
@@ -52,8 +56,9 @@ a {
 button {
     border: none;
     @include transition(all 0.2s ease-in-out);
-
-    &:hover, &:focus, &:active {
+    &:hover,
+    &:focus,
+    &:active {
         outline: none;
     }
 }
@@ -84,8 +89,13 @@ textarea {
     resize: none;
     overflow-y: hidden;
 }
-* { box-sizing: border-box; }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 body {
-  font-family: sans-serif;
+    font-family: sans-serif;
 }
