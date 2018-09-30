@@ -3,19 +3,19 @@
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    @media (max-width: 991px) {
-        background-position: left;
-    }
+    // @media (max-width: 991px) {
+    //     background-position: left;
+    // }
     p {
-        @media (max-width: 991px) {
-            background: rgba(255, 255, 255, 0.6);
-            padding: 25px 15px;
-            border-radius: 10px;
-        }
+        color: white;
+        // @media (max-width: 991px) {
+        //     background: rgba(255, 255, 255, 0.6);
+        //     padding: 25px 15px;
+        //     border-radius: 10px;
+        // }
     }
     .heading__block h2.section__heading{
-        @media (max-width: 991px) {
             color: white;
-        }
     }
+
 }
