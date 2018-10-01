@@ -16,7 +16,9 @@ body {
 }
 
 main {
-    background: url(../img/bg.jpg);
+    @media (min-width: 991px){
+        background: url(../img/bg.jpg);
+    }
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;

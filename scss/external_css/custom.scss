@@ -1,13 +1,12 @@
-
 .navigation__block-inner {
     z-index: 99;
     position: absolute;
     left: 0;
     width: 100%;
     text-align: center;
-    background: rgba(0,0,0,0.2);
+    background: rgba(0, 0, 0, 0.2);
     padding: 15px;
-    @media (max-width: 991px){
+    @media (max-width: 991px) {
         display: none;
     }
 }
@@ -63,7 +62,6 @@ nav a:focus {
     transform: translateY(0px);
 }
 
-
 /*
 .navigation__block-inner a {
     color: white;
@@ -71,7 +69,6 @@ nav a:focus {
     padding: 20px;
 }
 */
-
 
 /* ------------------------------------------------------------------SLIDER----------------------------------------------- */
 
@@ -131,7 +128,6 @@ nav a:focus {
     background-position: center center;
 }
 
-
 /* Custom navigation arrows */
 
 .nav-arrows span {
@@ -167,7 +163,6 @@ nav a:focus {
     border-left: none;
     border-bottom: none;
 }
-
 
 /* Custom navigation dots */
 
@@ -221,7 +216,6 @@ nav a:focus {
     background: rgba(255, 255, 255, 0.8);
 }
 
-
 /* Content elements */
 
 .hero__header_slider .bg-img-0 {
@@ -240,12 +234,22 @@ nav a:focus {
     background-size: cover;
 }
 
-.hero__header_slider .bg-img-2 {
-    background-image: url(../img/hero.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.hero__header_slider {
+    h2, blockquote {
+        @media (min-width: 991px) {
+            display: none;
+        }
+    }
+    .bg-img-2 {
+        background-image: url(../img/slide2.JPG);
+        @media (min-width: 991px) {
+            background-image: url(../img/hero.jpg);
+        }
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
 .hero__header_slider .bg-img-3 {
@@ -271,7 +275,6 @@ nav a:focus {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 
 /* Animations for content elements */
 
@@ -555,7 +558,6 @@ nav a:focus {
         opacity: 0;
     }
 }
-
 
 /* Media Queries for custom slider */
 
