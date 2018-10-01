@@ -69,11 +69,12 @@
     position: fixed;
     right: 20px;
     bottom: 20px;
-    outline: 1px solid rgba(666, 666, 666, .08);
+    outline: 1px solid gray;
+    background: $gray;
     cursor: pointer; // transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 1.5);
     svg line {
         stroke-width: 1;
-        stroke: #aaa;
+        stroke: white;
         fill: none;
         stroke-dasharray: 20;
         -webkit-transition: all .4s ease;
@@ -111,7 +112,7 @@
         transform: rotate(-45deg);
         &:after {
             content: "";
-            background-color: #666;
+            background-color: white;
             width: 18px;
             height: 1px;
             display: block;
@@ -133,7 +134,7 @@
         border-radius: 2px;
         &:after {
             content: "";
-            background-color: #666;
+            background-color: white;
             width: 18px;
             height: 1px;
             display: block;
