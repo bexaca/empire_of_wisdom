@@ -218,32 +218,17 @@ nav a:focus {
 
 /* Content elements */
 
-.hero__header_slider .bg-img-0 {
-    background-image: url(../img/slide1.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.hero__header_slider .bg-img-1 {
-    background-image: url(../img/slide2.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .hero__header_slider {
-    h2, blockquote {
+    h2,
+    blockquote {
         @media (min-width: 991px) {
             display: none;
         }
     }
-    .bg-img-2 {
-        background-image: url(../img/slide2.JPG);
+    .bg-img-0 {
+        background-image: url(../img/slide5.jpg);
         @media (min-width: 991px) {
-            background-image: url(../img/hero.jpg);
+            background-image: url(../img/slide.jpg);
         }
         background-attachment: fixed;
         background-position: center;
@@ -252,15 +237,25 @@ nav a:focus {
     }
 }
 
-.hero__header_slider .bg-img-3 {
-    background-image: url(../img/slide2.JPG);
+.hero__header_slider .bg-img-1 {
+    background-image: url(../img/slide1.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.hero__header_slider .bg-img-4 {
+.hero__header_slider {
+    .bg-img-2 {
+        background-image: url(../img/slide2.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.hero__header_slider .bg-img-3 {
     background-image: url(../img/slide3.JPG);
     background-attachment: fixed;
     background-position: center;
@@ -268,8 +263,16 @@ nav a:focus {
     background-size: cover;
 }
 
+.hero__header_slider .bg-img-4 {
+    background-image: url(../img/slide4.JPG);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .hero__header_slider .bg-img-5 {
-    background-image: url(../img/tvrdjava.jpg);
+    background-image: url(../img/slide7.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
