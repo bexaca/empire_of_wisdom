@@ -1,4 +1,11 @@
 .modal {
+    .close{
+        display: block;
+        img{
+            margin-top: 0;
+            width: 30px;
+        }
+    }
     h3 {
         font-weight: 700;
         font-size: 30px;
