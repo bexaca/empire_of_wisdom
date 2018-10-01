@@ -18,10 +18,10 @@ body {
 main {
     @media (min-width: 991px){
         background: url(../img/bg.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
     }
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
 }
 
 h1,
