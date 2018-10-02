@@ -14,7 +14,7 @@
     color: gray;
     border: 1px solid gray;
     border-radius: 0.5em;
-    @media (max-width: 500px) {
+    @media (max-width: 768px) {
         display: block;
         width: 100%;
     }
@@ -58,14 +58,14 @@
 
 .button-group .button:first-child {
     border-radius: 0.5em 0 0 0.5em;
-    @media (max-width: 500px) {
+    @media (max-width: 768px) {
         border-radius: 0;
     }
 }
 
 .button-group .button:last-child {
     border-radius: 0 0.5em 0.5em 0;
-    @media (max-width: 500px) {
+    @media (max-width: 768px) {
         border-radius: 0;
     }
 }
