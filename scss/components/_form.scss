@@ -1,142 +1,155 @@
 .contact__block {
-  background: url('../img/contact.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: right;
-  .heading__block .section__heading {
-    color: white;
-  }
-  .form{
-    text-align: center;
-    form{
-      width: 60%;
-      display: inline-block;
-      text-align: left;
-      @media (max-width: 768px){
-        width: 95%;
+    background: url('../img/contact.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right;
+    h4{
+      word-break: break-all;
+      a{
+        color: white;
       }
     }
-  }
+    .contact-info,
+    svg {
+        .cls-1{
+            fill: none;
+            stroke: white;
+            stroke-width: 1px;
+        }
+        .cls-2 {
+            fill: none;
+            stroke: white;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-width: 1px;
+        }
+        color: white;
+    }
+    .heading__block .section__heading {
+        color: white;
+    }
+    .form {
+        text-align: center;
+        form {
+            width: 60%;
+            display: inline-block;
+            text-align: left;
+            @media (max-width: 768px) {
+                width: 95%;
+            }
+        }
+    }
 }
 
 .ccform {
-  margin-bottom: 50px;
-  .ccfield-prepend:last-of-type {
-    text-align: center;
-    input.ccbtn {
-      float: none;
-      display: inline-block;
-      @include transition_mix;
+    margin-bottom: 50px;
+    .ccfield-prepend:last-of-type {
+        text-align: center;
+        input.ccbtn {
+            float: none;
+            display: inline-block;
+            @include transition_mix;
+        }
     }
-  }
-  // .form__input {
-  //   width: 100%;
-  //   background: none;
-  //   border: none;
-  //   color: white;
-  //   margin-bottom: 10px;
-  //   outline: none;
-  //   text-align: center;
-  // }
 }
 
 .button__block {
-  text-align: center;
+    text-align: center;
 }
 
 .ccbtn {
-  @include transition_mix;
-  display: inline-block;
-  border: none;
-  background: none;
-  border: 1px solid;
-  color: white;
-  padding: 10px 50px;
-  cursor: pointer;
-  text-decoration: none;
-  font-weight: bold;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
+    @include transition_mix;
+    display: inline-block;
+    border: none;
+    background: none;
+    border: 1px solid;
+    color: white;
+    padding: 10px 50px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
 }
 
 .ccbtn:hover {
-  background: rgba(255, 255, 255, 0.4);
-  color: white;
+    background: rgba(255, 255, 255, 0.4);
+    color: white;
 }
 
 #submit__button:focus,
 #submit__button:active {
-  outline: none;
+    outline: none;
 }
 
 :focus {
-  outline: none;
+    outline: none;
 }
 
 .input__block {
-  width: 100%;
-  float: left;
-  margin: 15px 0;
-  position: relative;
+    width: 100%;
+    float: left;
+    margin: 15px 0;
+    position: relative;
 }
 
 /* necessary to give position: relative to parent. */
 
 input[type="text"],
 textarea {
-  position: relative;
-  z-index: 1;
-  color: white;
-  width: 100%;
-  box-sizing: border-box;
-  letter-spacing: 1px;
+    position: relative;
+    z-index: 1;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: 1px;
 }
 
 .effect-16 {
-  border: 0;
-  padding: 4px 0;
-  border-bottom: 1px solid #aaa;
-  background-color: transparent;
+    border: 0;
+    padding: 4px 0;
+    border-bottom: 1px solid #aaa;
+    background-color: transparent;
 }
 
 .effect-16~.focus-border {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: white;
-  transition: 0.4s;
-  z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: 0.4s;
+    z-index: 1;
 }
 
 .effect-16:focus~.focus-border,
 .has-content.effect-16~.focus-border {
-  width: 100%;
-  transition: 0.4s;
+    width: 100%;
+    transition: 0.4s;
 }
 
 .textearea~.focus-border,
 .textearea~.focus-border {
-  bottom: 5px;
+    bottom: 5px;
 }
 
 .effect-16~label {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  top: 5px;
-  color: #aaa;
-  transition: 0.3s;
-  z-index: 0;
-  letter-spacing: 0.5px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 5px;
+    color: #aaa;
+    transition: 0.3s;
+    z-index: 0;
+    letter-spacing: 0.5px;
 }
 
 .effect-16:focus~label,
 .has-content.effect-16~label {
-  top: -16px;
-  font-size: 12px;
-  color: white;
-  transition: 0.3s;
+    top: -16px;
+    font-size: 12px;
+    color: white;
+    transition: 0.3s;
 }
