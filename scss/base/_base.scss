@@ -1,6 +1,7 @@
 /* ----- BASE --------------------------------------------------------------- */
 
 @import url('https://fonts.googleapis.com/css?family=Lato|Source+Sans+Pro');
+
 body {
     -webkit-font-smoothing: antialiased;
     user-select: none;
@@ -16,7 +17,7 @@ body {
 }
 
 main {
-    @media (min-width: 991px){
+    @media (min-width: 991px) {
         background: url(../img/bg.jpg);
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -36,6 +37,7 @@ h6 {
 
 section {
     padding: 120px 0;
+
     &.bottom__padding {
         padding-bottom: 0;
     }
@@ -46,6 +48,7 @@ ul {
 }
 
 a {
+
     &:hover,
     &:focus,
     &:active {
@@ -58,6 +61,7 @@ a {
 button {
     border: none;
     @include transition(all 0.2s ease-in-out);
+
     &:hover,
     &:focus,
     &:active {
@@ -100,4 +104,9 @@ textarea {
 
 body {
     font-family: sans-serif;
+}
+
+p {
+    font-weight: 600;
+    font-size: 18px;
 }

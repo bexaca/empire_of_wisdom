@@ -2,16 +2,13 @@
     display: inline-block;
     padding: 10px 18px;
     margin-bottom: 10px;
-    background: #EEE;
     border: none;
     border-radius: 7px;
-    color: #222;
     font-family: sans-serif;
     font-size: 16px;
-    text-shadow: 0 1px white;
     cursor: pointer;
-    background: transparent;
-    color: gray;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
     border: 1px solid gray;
     border-radius: 0.5em;
     @media (max-width: 768px) {
@@ -21,14 +18,14 @@
 }
 
 .button:hover {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 1);
     text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
     color: white;
 }
 
 .button:active,
 .button.is-checked {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 1);
 }
 
 .button.is-checked {
