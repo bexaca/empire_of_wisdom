@@ -62,14 +62,6 @@ nav a:focus {
     transform: translateY(0px);
 }
 
-/*
-.navigation__block-inner a {
-    color: white;
-    font-weight: bold;
-    padding: 20px;
-}
-*/
-
 /* ------------------------------------------------------------------SLIDER----------------------------------------------- */
 
 .hero__header_slider .sl-slider-wrapper {
@@ -219,12 +211,22 @@ nav a:focus {
 /* Content elements */
 
 .hero__header_slider {
-    h2,
-    blockquote {
-        @media (min-width: 991px) {
-            display: none;
+    .sl-slider h2{
+        @media (max-width: 768px){
+            padding: 70px 10px 10px 10px;
         }
     }
+    .popup-sale {
+        font-size: 30px;
+        color: black;
+        background: white;
+        padding: 25px;
+        border-radius: 40px;
+        box-shadow: 5px 5px 7px 4px rgba(72, 72, 72, 0.4784313725490);
+        @media (max-width: 768px){
+            font-size: 16px;
+        }
+    } 
     .bg-img-0 {
         background-image: url(../img/slide5.jpg);
         @media (min-width: 991px) {

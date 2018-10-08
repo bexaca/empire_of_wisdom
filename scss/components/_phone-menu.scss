@@ -83,6 +83,11 @@
     animation: toOpenO .4s ease-out forwards;
 }
 
+.collapse.in{
+    z-index: 28;
+    position: relative;
+}
+
 @keyframes toCloseX {
     0% {
         stroke-dashoffset:-1490;

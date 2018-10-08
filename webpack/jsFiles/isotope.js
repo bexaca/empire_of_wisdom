@@ -37,5 +37,9 @@ $('.button-group').each(function (i, buttonGroup) {
 // Gallery
 
 $("[data-fancybox]").fancybox({
-  animationEffect: "zoom-in-out"
+  animationEffect: "zoom-in-out",
+  loop: true,
+  thumbs : {
+    autoStart : true
+  }
 });
