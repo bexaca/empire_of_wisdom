@@ -62,6 +62,14 @@ $(document).ready(function () {
         }
     }
 
+    $('.skip-to-main-content').click(function() {
+        $(this).blur();
+    })
+
+    $('.scroll').click(function() {
+        $(this).blur();
+    })
+
     $('#submit__button').click(function (e) {
         if (!valName() || !valEmail() || !valMsg()) {
             e.preventDefault();
