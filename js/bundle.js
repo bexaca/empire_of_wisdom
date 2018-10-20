@@ -13475,9 +13475,16 @@ jQuery(document).ready(function () {
     }
 
     if (window.location.href.indexOf("thank") >= 0) {
-        setTimeout(function () {
-            window.location = window.location.origin;
-        }, 3000);
+        if (window.location.href.indexOf("en/thank") >= 0) {
+            setTimeout(function () {
+                var location = window.location.origin + '/en';
+                window.location = location;
+            }, 3000);
+        } else {
+            setTimeout(function () {
+                window.location = window.location.origin;
+            }, 3000);
+        }
     }
 
     new WOW().init();
