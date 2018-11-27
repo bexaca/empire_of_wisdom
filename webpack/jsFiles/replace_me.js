@@ -62,6 +62,21 @@ $(document).ready(function () {
         }
     }
 
+    function valCheckbox() {
+        var checked = $('#cb1').is(":checked");
+        if (!checked) {
+            $('.alert__block').removeClass('active__alert');
+            $('.alert__block-checkbox').addClass('active__alert');
+            setTimeout(function () {
+                $('.alert__block-checkbox').removeClass('active__alert');
+            }, 5000);
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+
     $('.skip-to-main-content').click(function() {
         $(this).blur();
     })
@@ -71,7 +86,7 @@ $(document).ready(function () {
     })
 
     $('#submit__button').click(function (e) {
-        if (!valName() || !valEmail() || !valMsg()) {
+        if (!valName() || !valEmail() || !valMsg() || !valCheckbox()) {
             e.preventDefault();
         }
     });
