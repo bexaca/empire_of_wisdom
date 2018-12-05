@@ -15073,6 +15073,15 @@ $(document).ready(function () {
         }
     }
 
+    function valFalseEmail() {
+        var text = $('#email__confirm').val();
+        if (text == 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     function valMsg() {
         var text = $('#text__input').val();
         if (text == 0) {
@@ -15110,7 +15119,7 @@ $(document).ready(function () {
     });
 
     $('#submit__button').click(function (e) {
-        if (!valName() || !valEmail() || !valMsg() || !valCheckbox()) {
+        if (!valFalseEmail() || !valName() || !valEmail() || !valMsg() || !valCheckbox()) {
             e.preventDefault();
         }
     });
