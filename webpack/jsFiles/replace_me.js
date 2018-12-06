@@ -59,16 +59,16 @@ $(document).ready(function () {
 
     function valMsg() {
         var text = $('#text__input').val();
-        if (text == 0) {
+        if (text.length >= 15 && !text.startsWith("5c0")) {
+            return true;
+        }
+        else {
             $('.alert__block').removeClass('active__alert');
             $('.alert__block-msg').addClass('active__alert');
             setTimeout(function () {
                 $('.alert__block-msg').removeClass('active__alert');
             }, 5000);
             return false;
-        }
-        else {
-            return true;
         }
     }
 
