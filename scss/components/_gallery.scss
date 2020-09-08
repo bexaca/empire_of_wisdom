@@ -86,7 +86,6 @@
     width: 32%;
     margin: 0.6%;
     @media (max-width: 768px) {
-
         width: 48%;
         margin: 1%;
     }
@@ -94,7 +93,7 @@
 
 .grid-item {
     float: left;
-    overflow: hidden;
+    // overflow: hidden;
     img {
         border-radius: 10px;
     }

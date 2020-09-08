@@ -11,7 +11,7 @@
         $email_subject = "Empire of wisdom website";
         $email_body = "$message \n\n $name";
 
-        $to = "bexaca@gmail.com";//<== update the email address
+        $to = "empireofwisdomfci5042@gmail.com";//<== update the email address
         $headers = "From: $email_from \r\n";
         
         $headers .= "Reply-To: $visitor_email \r\n";
